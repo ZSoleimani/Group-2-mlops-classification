@@ -5,7 +5,7 @@ Group 2: Project for 02476 Machine Learning Operations (DTU Course)
 This project aims to classify images of various PC parts using a deep learning model, specifically leveraging the power of Albumentations for data augmentation to improve model robustness. The dataset used for this project is the PC Parts Images Dataset from Kaggle, which contains images of different computer components (e.g., motherboards, RAM, graphics cards, etc.).
 
 ## Third-party package 
-The third-party package used in this project is [albumentations](https://github.com/albumentations-team/albumentations), which is a image augmentation library written in Python. Albumentation has +70 augmentations that can be applied to the training data, involving transformations such as JPEG compression, blurring, grayscaling, channel shuffling, RGB switching, and more. The documentation can be found [here](https://albumentations.ai/docs/). 
+The third-party package used in this project is [albumentations](https://github.com/albumentations-team/albumentations), which is an image augmentation library written in Python. Albumentation has +70 augmentations that can be applied to the training data, involving transformations such as JPEG compression, blurring, grayscaling, channel shuffling, RGB switching, and more. The documentation can be found [here](https://albumentations.ai/docs/). 
 
 ## Data description
 The dataset data initially used for this project is the [PC Parts Images Dataset](https://www.kaggle.com/datasets/asaniczka/pc-parts-images-dataset-classification?select=pc_parts) from Kaggle, consisting of 3,279 images categorized into 14 distinct classes: 
