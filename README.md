@@ -29,3 +29,51 @@ Each class contains between 142 and 298 images, providing a relatively balanced 
 
 ## Models
 Our primary focus will be on developing a simple convolutional neural network (CNN) architectur for the image classification task. The CNN will include layers for feature extraction (convolutional and pooling layers) and fully connected layers for classification. To optimize performance, we will experiment with the network architecture and hyperparameter settings using the tools provided in 02476. If needed, we might explore transfer learning using pre-trained models such as MobileNet or ResNet and fine-tuning them; we might also instead just experiment with the third party package, Albumentation, where two identical models are trained (one uses Albumentaion and one doesn't)and compared to quantify the efficacy of albumentation.
+
+
+## Project structure
+
+The directory structure of the project looks like this:
+```txt
+├── .github/                  # Github actions and dependabot
+│   ├── dependabot.yaml
+│   └── workflows/
+│       └── tests.yaml
+├── configs/                  # Configuration files
+├── data/                     # Data directory
+│   ├── processed
+│   └── raw
+├── dockerfiles/              # Dockerfiles
+│   ├── api.Dockerfile
+│   └── train.Dockerfile
+├── docs/                     # Documentation
+│   ├── mkdocs.yml
+│   └── source/
+│       └── index.md
+├── models/                   # Trained models
+├── notebooks/                # Jupyter notebooks
+├── reports/                  # Reports
+│   └── figures/
+├── src/                      # Source code
+│   ├── project_name/
+│   │   ├── __init__.py
+│   │   ├── api.py
+│   │   ├── data.py
+│   │   ├── evaluate.py
+│   │   ├── models.py
+│   │   ├── train.py
+│   │   └── visualize.py
+└── tests/                    # Tests
+│   ├── __init__.py
+│   ├── test_api.py
+│   ├── test_data.py
+│   └── test_model.py
+├── .gitignore
+├── .pre-commit-config.yaml
+├── LICENSE
+├── pyproject.toml            # Python project file
+├── README.md                 # Project README
+├── requirements.txt          # Project requirements
+├── requirements_dev.txt      # Development requirements
+└── tasks.py                  # Project tasks
+```
