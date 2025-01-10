@@ -27,4 +27,4 @@ The dataset data initially used for this project is the [PC Parts Images Dataset
 Each image has a resolution of 256x256 pixels and formatted in the JPG file type. The data provides a balanced representation of PC parts, which makes it suitable for a multi class classification task.
 
 ## Models
-  
+Our primary focus will be on developing a simple convolutional neural network (CNN) architectur for the image classification task. The CNN will include layers for feature extraction (convolutional and pooling layers) and fully connected layers for classification. To optimize performance, we will experiment with the network architecture and hyperparameter settings using the tools provided in 02476. If needed, we might explore transfer learning using pre-trained models such as MobileNet or ResNet and fine-tuning them; we might also instead just experiment with the third party package, Albumentation, where two identical models are trained (one uses Albumentaion and one doesn't)and compared to quantify the efficacy of albumentation.
