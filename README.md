@@ -23,6 +23,7 @@ The dataset data initially used for this project is the [PC Parts Images Dataset
 - ram
 - speakers
 - webcam
+
 Each image has a resolution of 256x256 pixels and formatted in the JPG file type. The data provides a balanced representation of PC parts, which makes it suitable for a multi class classification task.
 
 ## Models
