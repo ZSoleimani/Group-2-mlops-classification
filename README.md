@@ -8,7 +8,7 @@ This project aims to classify images of various PC parts using a deep learning m
 The third-party package used in this project is [albumentations](https://github.com/albumentations-team/albumentations), which is an image augmentation library written in Python. Albumentation has +70 augmentations that can be applied to the training data, involving transformations such as JPEG compression, blurring, grayscaling, channel shuffling, RGB switching, and more. The documentation can be found [here](https://albumentations.ai/docs/). 
 
 ## Data description
-The dataset data initially used for this project is the [PC Parts Images Dataset](https://www.kaggle.com/datasets/asaniczka/pc-parts-images-dataset-classification?select=pc_parts) from Kaggle, consisting of 3,279 images categorized into 14 distinct classes: 
+The dataset initially used for this project is the [PC Parts Images Dataset](https://www.kaggle.com/datasets/asaniczka/pc-parts-images-dataset-classification?select=pc_parts) from Kaggle, consisting of 3,279 images categorized into 14 distinct classes: 
 - cables
 - case
 - cpu
@@ -24,7 +24,8 @@ The dataset data initially used for this project is the [PC Parts Images Dataset
 - speakers
 - webcam
 
-Each image has a resolution of 256x256 pixels and formatted in the JPG file type. The data provides a balanced representation of PC parts, which makes it suitable for a multi class classification task.
+Each image has a resolution of 256x256 pixels and formatted in the JPG file type. This consistency allows for simple application of data augmentation techniques to the images, creating a larger and more diverse datasets. 
+Each class contains between 142 and 298 images, providing a relatively balanced representation of PC parts which is needed for training a robust model and reduces the models likelihood of bias towards a specific class. This dataset is therefore, very suitable for a multi class classification task. 
 
 ## Models
 Our primary focus will be on developing a simple convolutional neural network (CNN) architectur for the image classification task. The CNN will include layers for feature extraction (convolutional and pooling layers) and fully connected layers for classification. To optimize performance, we will experiment with the network architecture and hyperparameter settings using the tools provided in 02476. If needed, we might explore transfer learning using pre-trained models such as MobileNet or ResNet and fine-tuning them; we might also instead just experiment with the third party package, Albumentation, where two identical models are trained (one uses Albumentaion and one doesn't)and compared to quantify the efficacy of albumentation.
