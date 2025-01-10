@@ -24,7 +24,7 @@ The dataset initially used for this project is the [PC Parts Images Dataset](htt
 - speakers
 - webcam
 
-Each image has a resolution of 256x256 pixels and formatted in the JPG file type. This consistency allows for simple application of data augmentation techniques to the images, creating a larger and more diverse datasets. 
+The total size of the dataset is approximately 36 MB, where each image has a resolution of 256x256 pixels and formatted in the JPG file type. This consistency allows for simple application of data augmentation techniques to the images, creating a larger and more diverse datasets. 
 Each class contains between 142 and 298 images, providing a relatively balanced representation of PC parts which is needed for training a robust model and reduces the models likelihood of bias towards a specific class. This dataset is therefore, very suitable for a multi class classification task. 
 
 ## Models
